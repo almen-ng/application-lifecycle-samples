@@ -17,7 +17,7 @@ spec:
       containers:
       - name: crashloop-container
         image: busybox:latest
-        command: ["sh", "-c", "exit 1"]
+        command: ["sh", "-c", "echo 'ERROR: Application failed to start'; sleep 1; exit 1"]
         resources:
           limits:
             cpu: 50m
