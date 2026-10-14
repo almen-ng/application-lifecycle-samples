@@ -5,6 +5,7 @@ metadata:
   labels:
     app: crashloop-app
 spec:
+  progressDeadlineSeconds: 60
   selector:
     matchLabels:
       app: crashloop-app
