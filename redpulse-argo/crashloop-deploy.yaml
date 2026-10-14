@@ -17,8 +17,7 @@ spec:
     spec:
       containers:
       - name: crashloop-container
-        image: busybox:latest
-        command: ["sh", "-c", "echo 'ERROR: Application failed to start'; sleep 30; exit 1"]
+        image: quay.io/fxiang1/helloworld:this-tag-does-not-exist
         resources:
           limits:
             cpu: 50m
